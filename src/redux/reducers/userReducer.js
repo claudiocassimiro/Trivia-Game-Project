@@ -26,7 +26,11 @@ const userReducer = (state = INITIAL_STATE, action) => {
   case RESET_GAME:
     return {
       ...state,
-      ...action.payload,
+      name: '',
+      email: '',
+      assertions: 0,
+      score: 0,
+      userIcon: '',
     };
   default:
     return state;
