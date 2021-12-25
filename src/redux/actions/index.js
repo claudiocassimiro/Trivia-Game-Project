@@ -8,9 +8,8 @@ export const REQUEST_API = 'REQUEST_API';
 export const REQUEST_API_SUCCESS = 'REQUEST_API_SUCCESS';
 export const REQUEST_API_TRIVIA_SUCCESS = 'REQUEST_API_TRIVIA_SUCCESS';
 
-export const resetGame = (payload) => ({
+export const resetGame = () => ({
   type: RESET_GAME,
-  payload,
 });
 
 export const userLogin = (payload) => ({
