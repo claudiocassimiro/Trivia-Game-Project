@@ -19,7 +19,7 @@ class Feedback extends Component {
 
   resetDefaultGame() {
     const { history, reset } = this.props;
-    reset({ ...this.state });
+    reset();
     localStorage.clear();
     history.push('/');
   }
@@ -70,7 +70,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  reset: (payload) => dispatch(resetGame(payload)),
+  reset: () => dispatch(resetGame()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Feedback);
