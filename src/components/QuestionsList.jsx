@@ -84,7 +84,6 @@ class QuestionsList extends Component {
   }
 
   handleClick({ target }) {
-    this.toggleColor();
     const answer = target.getAttribute('data-testid');
     const correctAnswer = answer.includes('correct');
 
