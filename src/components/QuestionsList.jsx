@@ -1,10 +1,12 @@
 /* eslint-disable max-lines */
+/* eslint-disable max-lines-per-function */
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { saveScore } from '../redux/actions';
 import {
   QuestionCategory,
+  ConstainerQuestion,
   QuestionTitle,
   QuestionTime,
   QuestionContainer,
@@ -198,16 +200,18 @@ class QuestionsList extends Component {
     return (
       newResults.length > 0 && (
         <QuestionContainer>
-          <QuestionCategory
-            data-testid="question-category"
-          >
-            { results[index].category }
-          </QuestionCategory>
-          <QuestionTitle
-            data-testid="question-text"
-          >
-            { results[index].question }
-          </QuestionTitle>
+          <ConstainerQuestion>
+            <QuestionCategory
+              data-testid="question-category"
+            >
+              { results[index].category }
+            </QuestionCategory>
+            <QuestionTitle
+              data-testid="question-text"
+            >
+              { results[index].question }
+            </QuestionTitle>
+          </ConstainerQuestion>
           <AnswersContainer>
             {
               answers.map((answer, i) => (
