@@ -6,7 +6,7 @@ const MainContainer = styled.main`
     background: #272727;
     text-align: center;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
 `;
 
 export default MainContainer;
