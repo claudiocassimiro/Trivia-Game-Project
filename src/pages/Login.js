@@ -6,14 +6,11 @@ import { getPlayerToken, userLogin } from '../redux/actions';
 import {
   MainContainer,
   Titulo,
-  SettingsButton,
   FormElements,
-  SettingsImg,
   Input,
   PlayButton,
   FormContainer,
   FormElementsContainer } from './styles/LoginStyles';
-import ImageSettings from './img/Settings.png';
 
 class Login extends React.Component {
   constructor() {
@@ -106,18 +103,9 @@ class Login extends React.Component {
   }
 
   render() {
-    const { history } = this.props;
     return (
       <MainContainer>
         <FormContainer>
-          <SettingsButton type="button" onClick={ () => history.push('/settings') }>
-            <SettingsImg
-              src={ ImageSettings }
-              alt="Setting Button"
-              data-testid="btn-settings"
-              width="50px"
-            />
-          </SettingsButton>
           <FormElementsContainer>
             { this.FormElementsRender() }
           </FormElementsContainer>
