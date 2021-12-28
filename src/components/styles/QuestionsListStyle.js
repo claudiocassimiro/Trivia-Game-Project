@@ -1,13 +1,31 @@
 import styled from 'styled-components';
 
+export const ConstainerQuestion = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 0;
+    
+`;
+
 export const QuestionCategory = styled.h2`
-    font-size: 25px;
+    font-size: 30px;
     margin: 20px 0;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
 `;
 
 export const QuestionTitle = styled.h1`
-    font-size: 30px;
-
+    font-size: 25px;
+    color: #ccc;
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
 `;
 
 export const QuestionTime = styled.h3`
@@ -57,4 +75,5 @@ export const AnswersContainer = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  height: 25%;
 `;
