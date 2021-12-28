@@ -40,25 +40,9 @@ export const FormContainer = styled.section`
     width: 70%;
     height: 60%;
   }
-  @media (min-width: 901px) and (max-width: 1000px) {
-    width: 50%;
-    height: 60%;
-  }
-  @media (min-width: 1000px) and (max-width: 1400px) {
-    width: 45%;
-    height: 60%;
-  }
-  @media (min-width: 1401px) and (max-width: 1600px) {
-    width: 40%;
-    height: 60%;
-  }
-  @media (min-width: 1601px) and (max-width: 1920px) {
-    width: 35%;
-    height: 50%;
-  }
-  @media (min-width: 1921px) {
-    width: 650px;
-    height: 55%;
+  @media (min-width: 901px){
+    width: 700px;
+    height: 500px;
   }
 `;
 
@@ -103,6 +87,7 @@ export const PlayButton = styled.button`
     color: white;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 5px;
 `;
 
 export const FormElementsContainer = styled.div`
