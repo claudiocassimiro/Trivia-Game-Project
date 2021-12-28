@@ -13,39 +13,68 @@ export const FormContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 20%;
   height: 50%;
   background-color: #202020;
   margin: 0 auto;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid grey;
+  @media (min-width: 220px) and (max-width: 380px) {
+    width: 90%;
+    height: 55%;
+  }
+  @media (min-width: 381px) and (max-width: 500px) {
+    width: 85%;
+    height: 55%;
+  }
+  @media (min-width: 501px) and (max-width: 700px) {
+    width: 80%;
+    height: 60%;
+  }
+  @media (min-width: 701px) and (max-width: 760px) {
+    width: 75%;
+    height: 60%;
+  }
+  @media (min-width: 761px) and (max-width: 900px) {
+    width: 70%;
+    height: 60%;
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+    width: 50%;
+    height: 60%;
+  }
+  @media (min-width: 1000px) and (max-width: 1400px) {
+    width: 45%;
+    height: 60%;
+  }
+  @media (min-width: 1401px) and (max-width: 1600px) {
+    width: 40%;
+    height: 60%;
+  }
+  @media (min-width: 1601px) and (max-width: 1920px) {
+    width: 35%;
+    height: 50%;
+  }
+  @media (min-width: 1921px) {
+    width: 650px;
+    height: 55%;
+  }
 `;
 
 export const FormElements = styled.form`
   display: flex;
-  width: 60%;
+  width: 80%;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
   height: 150px;
 `;
 
 export const Titulo = styled.h1`
   font-size: x-large;
   color: white;
-`;
-
-export const SettingsButton = styled.button`
-    background-color: transparent;
-    border: 0;
-    align-self: flex-start;
-`;
-
-export const SettingsImg = styled.img`
-    width: 30px;
-    cursor: pointer;
 `;
 
 export const Input = styled.input`
