@@ -7,17 +7,21 @@ export const QuestionCategory = styled.h2`
 
 export const QuestionTitle = styled.h1`
     font-size: 30px;
+
 `;
 
 export const QuestionTime = styled.h3`
+    width: 30%
+    height: 30%;
     font-size: 20px;
+    margin-top: 20px;
 `;
 
 export const AnswerButton = styled.button`
     width: 150px;
-    height: 40px;
+    height: 50px;
     padding: 5px;
-    margin: 20px;
+    margin: 10px;
     background: #202020;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -40,7 +44,7 @@ export const NextQuestion = styled.button`
 
 export const QuestionContainer = styled.section`
     width: 80%;
-    height: 70vh;
+    height: 80vh;
     margin: auto;
     display: flex;
     flex-flow: column wrap;
